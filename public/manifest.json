@@ -8,13 +8,12 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://www.milb.com/live-stream-games/g*",
-        "https://milb.com/live-stream-games/g*"
-      ],
+      "matches": ["https://www.milb.com/*", "https://milb.com/*"],
       "js": ["build/bundle.js"],
       "run_at": "document_end"
     }
   ],
-  "host_permissions": ["*://milb.com/live-stream-games/g*"]
+  "permissions": ["webNavigation"],
+  "persistent": false,
+  "host_permissions": ["*://milb.com/*"]
 }

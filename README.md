@@ -8,8 +8,16 @@ utilizes svelte for the UI, and the MLB stats API to get data.
 
 ---
 
-### roadmap
+## roadmap
 
-- provide a simple sidebar that provides the starting batting order for the home and away team, as well as the starting pitcher.
-- show updates to the lineup such as relief pitchers and pinch hitters/runners
-- replicate how MLB.TV shows stats/lineups at the user's playhead
+### provide a simple sidebar that displays the starting batting order for the home and away team
+
+**current status**: ugly, and probably a little broken, but functional. can switch between the teams to show the lineup for both the home and away teams.
+
+<img src="res/current-example.png" width="500" alt="the current state of the sidebar">
+
+### display the game's starting pitchers in the sidebar
+
+### show updates to the lineup such as relief pitchers and pinch hitters/runners
+
+### replicate how MLB.TV shows stats/lineups at the user's playhead

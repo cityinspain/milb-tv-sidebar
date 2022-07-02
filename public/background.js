@@ -6,6 +6,17 @@ try {
       });
     }
   });
+
+  chrome.webNavigation.onCompleted.addListener(
+    (evt) => {
+      chrome.tabs.sendMessage(evt.tabId, {
+        message: "WebNavigationCompleted",
+      });
+    },
+    {
+      url: [{ hostContains: "milb.com" }],
+    }
+  );
 } catch (e) {
   console.log("Error from Extension: ", e);
 }
